@@ -19,6 +19,8 @@ jobs:
 
       - run: |
           rm -r .git
+          echo "# Nothing to see here" > README.md
+          echo "This repository is only a placholder for deploying [development previews](https://develop.fpv.wtf/) of [wtfos configurator](https://github.com/fpv-wtf/wtfos-configurator)." >> README.md
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
